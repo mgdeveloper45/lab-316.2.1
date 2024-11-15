@@ -7,3 +7,8 @@ app.appendChild(title);
 const instructions = document.createElement("p");
 instructions.textContent = "Guess a number between 1 and 100. You have 5 attempts!";
 app.appendChild(instructions);
+
+const attemptsDisplay = document.createElement("p");
+attemptsDisplay.textContent = "Remaining Attempts: 5";
+app.appendChild(attemptsDisplay);
+
