@@ -6,8 +6,15 @@ body {
     font-family: sans-serif;
     padding: 25px 50px;
   }
+  h1 {
+    color: #09507c;
+  }
   
-  code {
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  /* code {
     color: #09507c;
     background: #deedf2;
     padding: 2px 10px;
@@ -17,7 +24,7 @@ body {
   td {
     border: 1px solid black;
     padding: 15px;
-  }
+  } */
   
   button {
     font-size: 20px;
