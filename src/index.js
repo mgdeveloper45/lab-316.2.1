@@ -18,3 +18,16 @@ app.appendChild(feedback);
 
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 5;
+
+function startGame() {
+    if(attempts > 0) {
+        const guess = window.prompt("Enter your guess: ");
+        // console.log(guess)
+        if(guess === null) {
+            feedback.textContent = "Game canceled.";
+            return;
+        }
+        const userGuess = parseInt(guess, 10);
+    }
+}
+// startGame()
