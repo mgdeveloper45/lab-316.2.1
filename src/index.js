@@ -33,6 +33,19 @@ function startGame() {
             feedback.textContent = "Please enter a valid number between 1 and 100.";
             return;
         }
+
+        if (userGuess === randomNumber) {
+            feedback.textContent = `Congratulations! ${randomNumber} was the correct number!`;
+            attemptsDisplay.textContent = "Game Over.";
+            return;
+        } else if (userGuess > randomNumber) {
+            feedback.textContent = "Too high! Try again.";
+        } else {
+            feedback.textContent = "Too low! Try again.";
+        }
+          attempts--;
+          attemptsDisplay.textContent = `Remaining Attempts: ${attempts}`;
     }
+    
 }
-// startGame()
+startGame()
