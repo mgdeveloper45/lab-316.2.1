@@ -28,6 +28,11 @@ function startGame() {
             return;
         }
         const userGuess = parseInt(guess, 10);
+
+        if(isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+            feedback.textContent = "Please enter a valid number between 1 and 100.";
+            return;
+        }
     }
 }
 // startGame()
