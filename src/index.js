@@ -46,6 +46,12 @@ function startGame() {
           attempts--;
           attemptsDisplay.textContent = `Remaining Attempts: ${attempts}`;
     }
+    if (attempts === 0) {
+        feedback.textContent = `Game Over! The correct number was ${randomNumber}.`;
+        attemptsDisplay.textContent = "Game Over.";
+    } else {
     
+        setTimeout(startGame, 1000); 
+    }
 }
 startGame()
